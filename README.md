@@ -106,32 +106,24 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+This project was deployed using Code Institute's mock terminal for Heroku.
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+- Steps for deployment
+  - Fork or clone this repository
+  - Create a new Heroku app
+  - Set the buildbacks to Python and NodeJS in that order
+  - Link the Heroku app to the repository
+  - Click on Deploy
 
 The live link can be found here -  
 
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
+- Code Institute for the deployment terminal.
+- [Wikipedia](https://de.wikipedia.org/wiki/Geh_aufs_Ganze!) for inspiration of the game.
 
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
 
 
 Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
