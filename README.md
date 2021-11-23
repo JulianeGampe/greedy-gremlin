@@ -1,12 +1,22 @@
-# Love Running
+# Greedy Gremlin
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
+Greedy Gremlin is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
 
-For example; Love Running is a site that hopes to help keep people motivated to meet up for runs on a regular basis in Dublin, Ireland. The site will be targeted toward runners who are looking for a way to socialise and keep themselves fit. Love Running will be useful for runners to see exactly when and where they should be to join the running club. 
+The aim of the game is to collect 500 points. Users can choose to open one of three envelopes. One envelope will add points to the users score, one will subtract points and one envelope contains the Greedy Gremlin. Picking the envelope with the Gremlin will result in a Game Over as the Gremlin takes all the points for himself.
 
-![Responsice Mockup]()
+![Responsive Mockup]()
 
 ## How to Play
+
+Greedy Gremlin was inspired by the german televion gameshow "Geh aufs Ganze!" You can read more about it on the german website of [Wikipedia](https://de.wikipedia.org/wiki/Geh_aufs_Ganze!).
+
+The aim of the Greedy Gremlin game is to collect 500 points. The player will start with an initial amount of 50 points.
+
+They will be given a choice between three envelopes (red, green and blue). One of the envelopes will contain a number of positive points, which would be added to the players score. One envelope will contain a number of negative points, which would be deducted from the players score. The other envelope will contain the Greedy Gremlin, who will take all the points of the player and therefore result in a Game Over.
+
+After the player chose their envelope, the content of one of the other two envelopes will be revealed. The player can then decide if they still want to open their envelope or if they want to skip the round at the cost of 50 points.
+
+The game will be lost if the score of the player turns negative or if the envelope with the Greedy Gremlin is opened by the player.
 
 ## User Stories
 
