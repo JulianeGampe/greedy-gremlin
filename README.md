@@ -35,65 +35,48 @@ A wireframe created with Microsoft Word was used to plan the structure of the ga
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
 ### Existing Features
 
-- __Navigation Bar__
+- __Random assignment of a positive amount, negative amount and the Gremlin to the three envelopes__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - A positive amount of points, a negative a amount of points and the Gremlin are randomly assigned to the three envelopes (red, green and blue).
 
-![Nav Bar]()
+![Envelopes]()
 
-- __The landing page image__
+- __Choosing an envelope and revelation of content of one of the other envelopes__
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+  - The player can choose one envelope and will be shown the content of one of the other envelopes.
 
-![Landing Page]()
+![Choosing an envelope]()
 
-- __Club Ethos Section__
+- __Open or Skip__
 
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+  - The player can decide if they want to continue with opening their envelope or skip the round.
 
-![Club Ethos]()
+![Continue or skip]()
 
-- __Meetup Times section__
+- __Result__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - The result of the round is shown to the player.
 
-![Meetup Times]()
+![Result]()
 
-- __The Footer__ 
+- __Continue or exit__ 
 
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
+  - The player can decide if they want to continue playing or exit the game.
 
-![Footer]()
+![Continue or exit]()
 
-- __Gallery__
+- __Input Validation and Error checking__
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
-
-![Gallery]()
-
-- __The Sign Up Page__
-
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
-
-![Sign Up]()
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+  - Player can only enter the suggested commands.
+  - Possible command choices will be shown in the terminal.
+  - An error message will display if the input is invalid.
 
 ### Future Features
 
-- Another feature idea
+- Choose the amount of envelopes you want to play with.
+- Offer other choices apart from opening the envelope or skipping the round, like for example continue with opening boxes or goals. 
 
 ## Data Model
 
