@@ -20,7 +20,18 @@ The game will be lost if the score of the player turns negative or if the envelo
 
 ## User Stories
 
+- As a user I want to see the rules of the game, so that I know how to play it.
+- As a user I want to be able to choose one of the envelopes.
+- As a user I want to see the content of one of the other envelopes, so that I can decide if I want to proceed with openening my envelope or skip the round.
+- As a user I want to see the content of my envelope and the result from opening it.
+- As a user I want to be able to decide if I want to continue playing or not.
+
 ## Wireframes
+
+A wireframe created with Microsoft Word was used to plan the structure of the game.
+
+![Wireframe page one](documentation/wireframes/wireframe_pageone.png)
+![Wireframe page two](documentation/wireframes/wireframe_pagetwo.png)
 
 ## Features 
 
