@@ -37,7 +37,29 @@ class Envelope:
     Sets color, content
     Has a method to open the envelope and to skip the envelope
     """
-    
+    def __init__(self, color):
+        self.color = color
+        print(color)
+
+        envelope_one = random.randint(50, 100)
+        print(envelope_one)
+        envelope_two = random.randint(-100, -20)
+        print(envelope_two)
+        envelope_three = "Greedy Gremlin"
+        print(envelope_three)
+
+        envelope_content = [envelope_one, envelope_two, envelope_three]
+        print(envelope_content)
+
+        content_one = random.choice(envelope_content)
+        print(content_one)          
+        
+    def open():
+        pass
+    def skip():
+        pass
+
+
 
 def calculate_points():
     """
