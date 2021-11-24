@@ -28,7 +28,8 @@ def start_new_round(points):
     """
     Starts a new round of choosing an envelope
     """
-    pass
+    color_one = input("Which envelope would you like to open? green/red/blue: ")
+    color_one = Envelope(color_one)
 
 class Envelope:
     """
@@ -36,7 +37,7 @@ class Envelope:
     Sets color, content
     Has a method to open the envelope and to skip the envelope
     """
-    pass
+    
 
 def calculate_points():
     """
