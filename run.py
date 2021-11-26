@@ -63,6 +63,13 @@ def start_new_round(points):
 
     print(f"You have chosen the {chosen_envelope.color} envelope.")
     print(second_envelope.open())
+    print(f"Would you still like to open the {chosen_envelope.color} envelope?")
+    choice = input("If not you can skip this round at the cost of 50 points. Enter 'open' or 'skip': ")
+    if choice == "open":
+        print(chosen_envelope.open())
+    #else:
+     #   chosen_envelope.skip()
+        
        
     
 class Envelope:
