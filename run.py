@@ -39,33 +39,18 @@ def start_new_round(points):
     elif color_one == "green":
         color_two = "blue"
         color_three = "red"
-
-    print(f"You have chosen the {color_one} envelope.")
-    print(color_two)
-    print(color_three)
-
-    
+ 
     positive_amount = random.randint(50, 100)
-    print(positive_amount)
     negative_amount = random.randint(-100, -20)
-    print(negative_amount)
     greedy_gremlin = "Greedy Gremlin"
-    print(greedy_gremlin)
-
+    
     envelope_content = [positive_amount, negative_amount, greedy_gremlin]
-    print(envelope_content)
-
     content_one = random.choice(envelope_content)
-    print(content_one)
     envelope_content.remove(content_one)
-    print(envelope_content)
     content_two = random.choice(envelope_content)
-    print(content_two)
     envelope_content.remove(content_two)
-    print(envelope_content)
     content_three = envelope_content[0]
-    print(content_three)
-
+    
     chosen_envelope = Envelope(color_one, content_one)
     print(chosen_envelope.color)
     print(chosen_envelope.content)
@@ -75,7 +60,10 @@ def start_new_round(points):
     third_envelope = Envelope(color_three, content_three)
     print(third_envelope.color)
     print(third_envelope.content)
-    
+
+    print(f"You have chosen the {chosen_envelope.color} envelope.")
+    print(second_envelope.open())
+       
     
 class Envelope:
     """
@@ -87,8 +75,15 @@ class Envelope:
         self.color = color
         self.content = content 
         
-    def open():
-        pass
+    def open(self):
+        """
+        Opens the envelope and reveals the content
+        """
+        if self.content == "Greedy Gremlin":
+            return f"The {self.color} envelope contains the {self.content}."
+        else:
+            return f"The {self.color} envelope contains {self.content} points."
+
     def skip():
         pass
 
