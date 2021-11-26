@@ -29,7 +29,22 @@ def start_new_round(points):
     Starts a new round of choosing an envelope
     """
     color_one = input("Which envelope would you like to open? green/red/blue: ")
-    color_one = Envelope(color_one)
+    chosen_envelope = Envelope(color_one)
+
+    if color_one == "red":
+        color_two = "blue"
+        color_three = "green"
+    elif color_one == "blue":
+        color_two = "red"
+        color_three = "green"
+    elif color_one == "green":
+        color_two = "blue"
+        color_three = "red"
+
+    print(f"You have chosen the {color_one} envelope.")
+    print(color_two)
+    print(color_three)
+    
 
 class Envelope:
     """
