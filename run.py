@@ -29,7 +29,6 @@ def start_new_round(points):
     Starts a new round of choosing an envelope
     """
     color_one = input("Which envelope would you like to open? green/red/blue: ")
-    chosen_envelope = Envelope(color_one)
 
     if color_one == "red":
         color_two = "blue"
@@ -44,30 +43,49 @@ def start_new_round(points):
     print(f"You have chosen the {color_one} envelope.")
     print(color_two)
     print(color_three)
-    
 
+    
+    positive_amount = random.randint(50, 100)
+    print(positive_amount)
+    negative_amount = random.randint(-100, -20)
+    print(negative_amount)
+    greedy_gremlin = "Greedy Gremlin"
+    print(greedy_gremlin)
+
+    envelope_content = [positive_amount, negative_amount, greedy_gremlin]
+    print(envelope_content)
+
+    content_one = random.choice(envelope_content)
+    print(content_one)
+    envelope_content.remove(content_one)
+    print(envelope_content)
+    content_two = random.choice(envelope_content)
+    print(content_two)
+    envelope_content.remove(content_two)
+    print(envelope_content)
+    content_three = envelope_content[0]
+    print(content_three)
+
+    chosen_envelope = Envelope(color_one, content_one)
+    print(chosen_envelope.color)
+    print(chosen_envelope.content)
+    second_envelope = Envelope(color_two, content_two)
+    print(second_envelope.color)
+    print(second_envelope.content)
+    third_envelope = Envelope(color_three, content_three)
+    print(third_envelope.color)
+    print(third_envelope.content)
+    
+    
 class Envelope:
     """
     Creates the envelopes
     Sets color, content
     Has a method to open the envelope and to skip the envelope
     """
-    def __init__(self, color):
+    def __init__(self, color, content):
         self.color = color
-        print(color)
-
-        envelope_one = random.randint(50, 100)
-        print(envelope_one)
-        envelope_two = random.randint(-100, -20)
-        print(envelope_two)
-        envelope_three = "Greedy Gremlin"
-        print(envelope_three)
-
-        envelope_content = [envelope_one, envelope_two, envelope_three]
-        print(envelope_content)
-
-        content_one = random.choice(envelope_content)
-        print(content_one)          
+        self.content = content 
         
     def open():
         pass
