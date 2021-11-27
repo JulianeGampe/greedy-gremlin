@@ -107,14 +107,14 @@ def calculate_points(points, chosen_envelope_content):
     """
     points = points + chosen_envelope_content
 
-    if points >= 0:
-        print(f"You have {points}. You need at least 500 points to win.")
+    if points >= 0 and points < 500:
+        print(f"You have {points} points. You need at least 500 points to win.")
         play_new_round(points)
     elif points >= 500:
         print("YOU WON! Congratulation!")
         play_again()
     else:
-        print("Ahhh...you have a negative amount of points. GAME OVER")
+        print(f"Ahhh...you have {points} points. GAME OVER")
         play_again()
 
 def play_new_round(points):
