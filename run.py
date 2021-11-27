@@ -70,7 +70,7 @@ def start_new_round(points):
         if chosen_envelope.content != "Greedy Gremlin":
             calculate_points(points, chosen_envelope.content)
         #else:
-        # play_again() 
+           #play_again() 
     #else:
      #   chosen_envelope.skip()
         
@@ -133,7 +133,13 @@ def play_again():
     Displays after a win or game over
     Allows the player to choose to start a new game or exit
     """
-    pass
+    another_game = input("Would you like to play again or exit the game? play/exit: ")
+
+    if another_game == "play":
+        print("The Greedy Gremlin is waiting for your points.")
+        start_game()
+    else:
+        exit()
 
 def exit():
     """
