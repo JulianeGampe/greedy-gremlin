@@ -117,12 +117,14 @@ def calculate_points(points, chosen_envelope_content):
         print("Ahhh...you have a negative amount of points. GAME OVER")
         play_again()
 
-def play_new_round():
+def play_new_round(points):
     """
     Allows the player that has a positive number of points to:
     Start a new round or exit the game
     """
-    pass
+    new_round = input("Would you like to continue with the next round or skip? next/skip: ")
+    if new_round == "next":
+        start_new_round(points)
 
 def play_again():
     """
