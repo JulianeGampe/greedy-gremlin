@@ -71,8 +71,8 @@ def start_new_round(points):
             calculate_points(points, chosen_envelope.content)
         #else:
            #play_again() 
-    #else:
-     #   chosen_envelope.skip()
+    # else:
+    #     print(chosen_envelope.skip())
         
        
     
@@ -95,10 +95,12 @@ class Envelope:
         else:
             return f"The {self.color} envelope contains {self.content} points."
 
-    def skip():
-        pass
-
-
+    def skip(self):
+        """
+        Displays the message that the envelope will not be opened and 50 points are deducted
+        """
+        return "You have chosen to skip the round.\nYour envelope will not be opened.\n50 points will now be deducted from your score."
+        
 
 def calculate_points(points, chosen_envelope_content):
     """
