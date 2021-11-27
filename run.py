@@ -91,7 +91,12 @@ class Envelope:
         Opens the envelope and reveals the content
         """
         if self.content == "Greedy Gremlin":
-            return f"The {self.color} envelope contains the {self.content}."
+            new_line = "\n"
+            return (
+                f"-------------------------------------------{new_line}"
+                f"The {self.color} envelope contains the {self.content}. GAME OVER{new_line}"
+                f"-------------------------------------------{new_line}"
+            )
         else:
             return f"The {self.color} envelope contains {self.content} points."
 
