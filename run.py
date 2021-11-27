@@ -69,13 +69,13 @@ def start_new_round(points):
         print(chosen_envelope.open())
         if chosen_envelope.content != "Greedy Gremlin":
             calculate_points(points, chosen_envelope.content)
-        #else:
-           #play_again() 
-    # else:
-    #     print(chosen_envelope.skip())
+        else:
+           play_again() 
+    else:
+        print(chosen_envelope.skip())
+        calculate_points(points, -50)
         
-       
-    
+           
 class Envelope:
     """
     Creates the envelopes
