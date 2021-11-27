@@ -122,9 +122,11 @@ def play_new_round(points):
     Allows the player that has a positive number of points to:
     Start a new round or exit the game
     """
-    new_round = input("Would you like to continue with the next round or skip? next/skip: ")
+    new_round = input("Would you like to continue with the next round or exit the game? next/exit: ")
     if new_round == "next":
         start_new_round(points)
+    else:
+        exit()
 
 def play_again():
     """
