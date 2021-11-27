@@ -140,7 +140,7 @@ def exit():
     Exits the game completely
     Displays Goodbye message
     """
-    pass
+    print("Thank you for playing! The Greedy Gremlin will try to get your points the next time!")
 
 def main():
     """
