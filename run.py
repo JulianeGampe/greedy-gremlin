@@ -67,6 +67,10 @@ def start_new_round(points):
     choice = input("If not you can skip this round at the cost of 50 points. Enter 'open' or 'skip': ")
     if choice == "open":
         print(chosen_envelope.open())
+        if chosen_envelope.content != "Greedy Gremlin":
+            calculate_points(points, chosen_envelope.content)
+        #else:
+        # play_again() 
     #else:
      #   chosen_envelope.skip()
         
@@ -96,11 +100,22 @@ class Envelope:
 
 
 
-def calculate_points():
+def calculate_points(points, chosen_envelope_content):
     """
     Calculates the number of points after each round
+    Displays the result of the round
     """
-    pass
+    points = points + chosen_envelope_content
+
+    if points >= 0:
+        print(f"You have {points}. You need at least 500 points to win.")
+        play_new_round(points)
+    elif points >= 500:
+        print("YOU WON! Congratulation!")
+        play_again()
+    else:
+        print("Ahhh...you have a negative amount of points. GAME OVER")
+        play_again()
 
 def play_new_round():
     """
