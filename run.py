@@ -102,21 +102,27 @@ class Envelope:
         return "You have chosen to skip the round.\nYour envelope will not be opened.\n50 points will now be deducted from your score."
         
 
-def calculate_points(points, chosen_envelope_content):
+def calculate_points(points, new_points):
     """
     Calculates the number of points after each round
     Displays the result of the round
     """
-    points = points + chosen_envelope_content
+    points = points + new_points
 
     if points >= 0 and points < 500:
+        print("-------------------------------------------")
         print(f"You have {points} points. You need at least 500 points to win.")
+        print("-------------------------------------------")
         play_new_round(points)
     elif points >= 500:
+        print("-------------------------------------------")
         print("YOU WON! Congratulation!")
+        print("-------------------------------------------")
         play_again()
     else:
+        print("-------------------------------------------")
         print(f"Ahhh...you have {points} points. GAME OVER")
+        print("-------------------------------------------")
         play_again()
 
 def play_new_round(points):
