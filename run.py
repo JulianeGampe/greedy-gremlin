@@ -1,6 +1,7 @@
 import random
 from prompt_toolkit import prompt 
 from prompt_toolkit.completion import WordCompleter
+from colorama import Fore
 
 points = 50
 
@@ -49,7 +50,8 @@ def instructions():
     print("To win the game: Collect 500 points!")
     print("You will play several rounds to achieve that.")
     print("You will start with an initial number of 50 points.")
-    print("You will be given a choice between three envelopes: red, green, blue.")
+    print("You will be given a choice between three envelopes:")
+    print(f"{Fore.RED}red{Fore.RESET}, {Fore.GREEN}green{Fore.RESET}, {Fore.BLUE}blue{Fore.RESET}.")
     print("One of them contains a positive number of points.")
     print("One contains a negative number of points.")
     print("One contains the Greedy Gremlin, who will take all your points for himself.")
@@ -89,20 +91,25 @@ def start_new_round(points):
     color_completer = WordCompleter(["red", "green", "blue"])
 
     while True:
-        color_one = prompt("Which envelope would you like to open? green/red/blue: ", completer=color_completer).lower()
+        print("Which envelope would you like to open?")
+        print(f"{Fore.GREEN}green{Fore.RESET}/{Fore.RED}red{Fore.RESET}/{Fore.BLUE}blue{Fore.RESET}")
+        color_one = prompt("", completer=color_completer).lower()
 
         if validate_color(color_one):
             break
          
     if color_one == "red":
-        color_two = "blue"
-        color_three = "green"
+        color_one = f"{Fore.RED}red{Fore.RESET}"
+        color_two = f"{Fore.BLUE}blue{Fore.RESET}"
+        color_three = f"{Fore.GREEN}green{Fore.RESET}"
     elif color_one == "blue":
-        color_two = "red"
-        color_three = "green"
+        color_one = f"{Fore.BLUE}blue{Fore.RESET}"
+        color_two = f"{Fore.RED}red{Fore.RESET}"
+        color_three = f"{Fore.GREEN}green{Fore.RESET}"
     elif color_one == "green":
-        color_two = "blue"
-        color_three = "red"    
+        color_one = f"{Fore.GREEN}green{Fore.RESET}"
+        color_two = f"{Fore.BLUE}blue{Fore.RESET}"
+        color_three = f"{Fore.RED}red{Fore.RESET}"   
         
  
     positive_amount = random.randint(50, 100)
