@@ -18,12 +18,8 @@ def menu():
     elif menu_choice == "exit":
         exit()
 
-def start_game():
-    """
-    Starts a new game with an initial 50 points
-    Displays game instructions
-    """
-    print("Welcome to the Greedy Gremlin!")
+def instructions():
+    print("-------------------------------------------")
     print("How to play:")
     print("To win the game: Collect 500 points!")
     print("You will play several rounds to achieve that.")
@@ -35,6 +31,19 @@ def start_game():
     print("After choosing an envelope the content of one of the others will be revealed.")
     print("You can continue to open your envelope or skip the round\nat the cost of 50 points.")
     print("The game is lost if you open the envelope with the Greedy Gremlin\nor if your score turns negative.")
+    print("-------------------------------------------")
+
+    instructions_choice = input("Would you like to play the game or exit? play/exit: ")
+
+    if instructions_choice == "play":
+        start_game()
+    elif instructions_choice == "exit":
+        exit()
+
+def start_game():
+    """
+    Starts a new game with an initial 50 points
+    """
     print("-------------------------------------------")
     print(f"You have {points} points.")
     print("-------------------------------------------")
