@@ -58,8 +58,10 @@ def instructions():
     print("The game is lost if you open the envelope with the Greedy Gremlin\nor if your score turns negative.")
     print("-------------------------------------------")
 
+    instructions_completer = WordCompleter(["play", "exit"])
+
     while True:
-        instructions_choice = input("Would you like to play the game or exit? play/exit: ").lower()
+        instructions_choice = prompt("Would you like to play the game or exit? play/exit: ", completer=instructions_completer).lower()
 
         if validate_play_exit(instructions_choice):
             break
@@ -83,8 +85,11 @@ def start_new_round(points):
     """
     Starts a new round of choosing an envelope
     """
+
+    color_completer = WordCompleter(["red", "green", "blue"])
+
     while True:
-        color_one = input("Which envelope would you like to open? green/red/blue: ").lower()
+        color_one = prompt("Which envelope would you like to open? green/red/blue: ", completer=color_completer).lower()
 
         if validate_color(color_one):
             break
@@ -125,8 +130,10 @@ def start_new_round(points):
     print(second_envelope.open())
     print(f"Would you still like to open the {chosen_envelope.color} envelope?")
 
+    open_skip_completer = WordCompleter(["open", "skip"])
+
     while True:
-        choice = input("If not you can skip this round at the cost of 50 points. Enter 'open' or 'skip': ").lower()
+        choice = prompt("If not you can skip this round at the cost of 50 points. Enter 'open' or 'skip': ", completer=open_skip_completer).lower()
 
         if validate_open(choice):
             break
@@ -232,8 +239,10 @@ def play_new_round(points):
     Allows the player that has a positive number of points to:
     Start a new round or exit the game
     """
+    new_round_completer = WordCompleter(["play", "exit"])
+
     while True:
-        new_round = input("Would you like to continue playing the next round or exit the game? play/exit: ").lower()
+        new_round = prompt("Would you like to continue playing the next round or exit the game? play/exit: ", completer=new_round_completer).lower()
 
         if validate_play_exit(new_round):
             break
@@ -248,8 +257,11 @@ def play_again():
     Displays after a win or game over
     Allows the player to choose to start a new game or exit
     """
+
+    play_again_completer = WordCompleter(["play", "exit"])
+
     while True:
-        another_game = input("Would you like to play again or exit the game? play/exit: ").lower()
+        another_game = prompt("Would you like to play again or exit the game? play/exit: ", completer=play_again_completer).lower()
 
         if validate_play_exit(another_game):
             break
