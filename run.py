@@ -106,7 +106,10 @@ def start_new_round(points):
         if chosen_envelope.content != "Greedy Gremlin":
             calculate_points(points, chosen_envelope.content)
         else:
-           play_again() 
+            print("-------------------------------------------")
+            print("GAME OVER")
+            print("-------------------------------------------")
+            play_again() 
     else:
         print(chosen_envelope.skip())
         calculate_points(points, -50)
@@ -151,15 +154,12 @@ class Envelope:
         """
         Opens the envelope and reveals the content
         """
+        new_line = "\n"
         if self.content == "Greedy Gremlin":
-            new_line = "\n"
-            return (
-                f"-------------------------------------------{new_line}"
-                f"The {self.color} envelope contains the {self.content}. GAME OVER{new_line}"
-                f"-------------------------------------------{new_line}"
-            )
+            return f"The {self.color} envelope contains the {self.content}."
         else:
             return f"The {self.color} envelope contains {self.content} points."
+
 
     def skip(self):
         """
