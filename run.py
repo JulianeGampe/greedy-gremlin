@@ -28,8 +28,13 @@ def start_new_round(points):
     """
     Starts a new round of choosing an envelope
     """
-    color_one = input("Which envelope would you like to open? green/red/blue: ")
+    while True:
+        color_one = input("Which envelope would you like to open? green/red/blue: ").lower()
 
+        if validate_data(color_one):
+            print("valid entry")
+            break
+         
     if color_one == "red":
         color_two = "blue"
         color_three = "green"
@@ -38,7 +43,8 @@ def start_new_round(points):
         color_three = "green"
     elif color_one == "green":
         color_two = "blue"
-        color_three = "red"
+        color_three = "red"    
+        
  
     positive_amount = random.randint(50, 100)
     negative_amount = random.randint(-100, -20)
@@ -75,6 +81,18 @@ def start_new_round(points):
         print(chosen_envelope.skip())
         calculate_points(points, -50)
         
+
+def validate_data(data):
+
+    try:
+        if data != "red" and data != "blue" and data != "green":
+            raise ValueError
+
+    except:
+        print("Please enter 'red', 'blue' or 'green'.")
+        return False
+        
+    return True
            
 class Envelope:
     """
