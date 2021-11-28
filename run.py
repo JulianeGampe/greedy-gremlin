@@ -9,7 +9,12 @@ def menu():
     print("Welcome to the Greedy Gremlin!")
     print("What would you like to do?")
     print("Read game instructions, start playing, exit the game")
-    menu_choice = input("read, play, exit: ")
+    
+    while True:
+        menu_choice = input("read, play, exit: ").lower()
+
+        if validate_read_play_exit(menu_choice):
+            break
     
     if menu_choice == "read":
         instructions()
@@ -17,6 +22,19 @@ def menu():
         start_game()
     elif menu_choice == "exit":
         exit()
+
+
+def validate_read_play_exit(menu_choice):
+    
+    try:
+        if menu_choice != "read" and menu_choice != "play" and menu_choice != "exit":
+            raise ValueError
+
+    except:
+        print("Please enter 'read', 'play' or 'exit'")
+        return False
+    
+    return True
 
 def instructions():
     print("-------------------------------------------")
