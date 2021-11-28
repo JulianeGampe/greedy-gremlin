@@ -25,7 +25,10 @@ def menu():
 
 
 def validate_read_play_exit(menu_choice):
-    
+    """
+    Checks if the entry made was "read", "play" or "exit"
+    If not it raises a value error
+    """
     try:
         if menu_choice != "read" and menu_choice != "play" and menu_choice != "exit":
             raise ValueError
@@ -139,7 +142,10 @@ def start_new_round(points):
         
 
 def validate_color(color):
-
+    """
+    Checks if the entry made was "red", "blue" or "green"
+    If not it raises a value error
+    """
     try:
         if color != "red" and color != "blue" and color != "green":
             raise ValueError
@@ -152,7 +158,10 @@ def validate_color(color):
            
 
 def validate_open(choice):
-
+    """
+    Checks if the entry made was "open" or "skip"
+    If not it raises a value error
+    """
     try:
         if choice != "open" and choice != "skip":
             raise ValueError
@@ -248,7 +257,10 @@ def play_again():
         exit()
 
 def validate_play_exit(entry):
-    
+    """
+    Checks if the entry made was "play" or "exit"
+    If not it raises a value error
+    """    
     try:
         if entry != "play" and entry != "exit":
             raise ValueError
