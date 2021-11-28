@@ -33,12 +33,17 @@ def instructions():
     print("The game is lost if you open the envelope with the Greedy Gremlin\nor if your score turns negative.")
     print("-------------------------------------------")
 
-    instructions_choice = input("Would you like to play the game or exit? play/exit: ")
+    while True:
+        instructions_choice = input("Would you like to play the game or exit? play/exit: ").lower()
 
+        if validate_play_exit(instructions_choice):
+            break
+        
     if instructions_choice == "play":
         start_game()
     elif instructions_choice == "exit":
         exit()
+
 
 def start_game():
     """
