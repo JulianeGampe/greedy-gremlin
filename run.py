@@ -2,6 +2,22 @@ import random
 
 points = 50
 
+def menu():
+    """
+    Displays the welcome message and asks what the user would like to do
+    """
+    print("Welcome to the Greedy Gremlin!")
+    print("What would you like to do?")
+    print("Read game instructions, start playing, exit the game")
+    menu_choice = input("read, play, exit: ")
+    
+    if menu_choice == "read":
+        instructions()
+    elif menu_choice == "play":
+        start_game()
+    elif menu_choice == "exit":
+        exit()
+
 def start_game():
     """
     Starts a new game with an initial 50 points
@@ -220,4 +236,4 @@ def exit():
     print("Thank you for playing! The Greedy Gremlin will try to get your points the next time!")
 
 
-start_game()
+menu()
