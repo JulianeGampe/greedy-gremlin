@@ -31,8 +31,7 @@ def start_new_round(points):
     while True:
         color_one = input("Which envelope would you like to open? green/red/blue: ").lower()
 
-        if validate_data(color_one):
-            print("valid entry")
+        if validate_color(color_one):
             break
          
     if color_one == "red":
@@ -88,10 +87,10 @@ def start_new_round(points):
         calculate_points(points, -50)
         
 
-def validate_data(data):
+def validate_color(color):
 
     try:
-        if data != "red" and data != "blue" and data != "green":
+        if color != "red" and color != "blue" and color != "green":
             raise ValueError
 
     except:
@@ -100,7 +99,7 @@ def validate_data(data):
         
     return True
            
-           
+
 def validate_open(choice):
 
     try:
