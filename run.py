@@ -219,10 +219,5 @@ def exit():
     """
     print("Thank you for playing! The Greedy Gremlin will try to get your points the next time!")
 
-def main():
-    """
-    Runs all program functions
-    """
-    start_game()
 
-main()
+start_game()
