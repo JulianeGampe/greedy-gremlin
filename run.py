@@ -1,4 +1,6 @@
 import random
+from prompt_toolkit import prompt 
+from prompt_toolkit.completion import WordCompleter
 
 points = 50
 
@@ -10,8 +12,10 @@ def menu():
     print("What would you like to do?")
     print("Read game instructions, start playing, exit the game")
     
+    menu_completer = WordCompleter(["read", "play", "exit"])
+
     while True:
-        menu_choice = input("read, play, exit: ").lower()
+        menu_choice = prompt("read, play, exit: ", completer=menu_completer).lower()
 
         if validate_read_play_exit(menu_choice):
             break
