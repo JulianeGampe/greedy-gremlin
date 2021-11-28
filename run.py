@@ -171,8 +171,13 @@ def play_new_round(points):
     Allows the player that has a positive number of points to:
     Start a new round or exit the game
     """
-    new_round = input("Would you like to continue with the next round or exit the game? next/exit: ")
-    if new_round == "next":
+    while True:
+        new_round = input("Would you like to continue playing the next round or exit the game? play/exit: ").lower()
+
+        if validate_play_exit(new_round):
+            break
+
+    if new_round == "play":
         start_new_round(points)
     else:
         exit()
@@ -182,13 +187,30 @@ def play_again():
     Displays after a win or game over
     Allows the player to choose to start a new game or exit
     """
-    another_game = input("Would you like to play again or exit the game? play/exit: ")
+    while True:
+        another_game = input("Would you like to play again or exit the game? play/exit: ").lower()
+
+        if validate_play_exit(another_game):
+            break
 
     if another_game == "play":
         print("The Greedy Gremlin is waiting for your points.")
         start_game()
     else:
         exit()
+
+def validate_play_exit(entry):
+    
+    try:
+        if entry != "play" and entry != "exit":
+            raise ValueError
+
+    except:
+        print("Please enter 'play' or 'exit'")
+        return False
+    
+    return True
+
 
 def exit():
     """
