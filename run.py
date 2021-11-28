@@ -70,7 +70,13 @@ def start_new_round(points):
     print(f"You have chosen the {chosen_envelope.color} envelope.")
     print(second_envelope.open())
     print(f"Would you still like to open the {chosen_envelope.color} envelope?")
-    choice = input("If not you can skip this round at the cost of 50 points. Enter 'open' or 'skip': ")
+
+    while True:
+        choice = input("If not you can skip this round at the cost of 50 points. Enter 'open' or 'skip': ").lower()
+
+        if validate_open(choice):
+            break
+
     if choice == "open":
         print(chosen_envelope.open())
         if chosen_envelope.content != "Greedy Gremlin":
@@ -94,6 +100,19 @@ def validate_data(data):
         
     return True
            
+           
+def validate_open(choice):
+
+    try:
+        if choice != "open" and choice != "skip":
+            raise ValueError
+
+    except:
+        print("Please enter 'open' or 'skip'")
+        return False
+    
+    return True
+
 class Envelope:
     """
     Creates the envelopes
