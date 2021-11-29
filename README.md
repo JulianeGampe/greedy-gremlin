@@ -101,7 +101,9 @@ The live link can be found here -
 ## Credits 
 
 - Code Institute for the deployment terminal.
-- [Wikipedia](https://de.wikipedia.org/wiki/Geh_aufs_Ganze!) for inspiration of the game.
+- For inspiration of the game: "Geh aufs Ganze" on the [German Wikipedia Website](https://de.wikipedia.org/wiki/Geh_aufs_Ganze!) and the [English Wikipedia Website](https://en.wikipedia.org/wiki/Let%27s_Make_a_Deal) for the American equivalent "Let's Make a Deal".
+- Information about the prompt_toolkit from the [PyPI website](https://pypi.org/project/prompt-toolkit/).
+- Information about colorama from the [PyPI website](https://pypi.org/project/colorama/).
 
 
 
