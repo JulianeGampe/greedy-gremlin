@@ -89,13 +89,43 @@ Due to the lengths of testing, you can see all tests in the [TESTING.md](TESTING
 This project was deployed using Code Institute's mock terminal for Heroku.
 
 - Steps for deployment
-  - Fork or clone this repository
   - Create a new Heroku app
-  - Set the buildbacks to Python and NodeJS in that order
-  - Link the Heroku app to the repository
+
+  ![Create App](documentation/screenshots/createapp.png)
+  ![Create App Step 2](documentation/screenshots/createappstep2.png)
+
+  - Add two buildpacks from the _Settings_ tab. The order is as follows:
+      1. `heroku/python`
+      2. `heroku/nodejs`
+  
+  ![Add buildpacks](documentation/screenshots/addbuildpacks.png)
+  ![Add buildpacks result](documentation/screenshots/addbuildpacksresult.png)
+
+  - Create a _Config Var_ called `PORT`. Set this to `8000`
+
+  ![Create Config Vars](documentation/screenshots/configvars.png)
+
+  - Link the Heroku app to the repository in the _Deploy_ tab
+
+  ![Connect to GitHub](documentation/screenshots/connecttogithub.png)
+  ![Search Repository](documentation/screenshots/searchrepository.png)
+  ![Connect to GitHub result](documentation/screenshots/connecttogithubresult.png)
+
   - Click on Deploy
 
-The live link can be found here -  
+  ![Deploy](documentation/screenshots/deploy.png)
+  ![Deploy result](documentation/screenshots/deployresult.png)
+
+The live link can be found here -  https://greedy-gremlin.herokuapp.com/ 
+
+
+### Local Deployment
+
+If you would like to make a local copy of this repository, you can clone it by typing the following command in your IDE terminal:
+- `git clone https://github.com/JulianeGampe/greedy-gremlin.git` 
+
+You must install the required Python packages for this application, using the command:
+- `pip3 install -r requirements.txt`
 
 
 ## Credits 
