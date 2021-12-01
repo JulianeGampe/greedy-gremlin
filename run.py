@@ -45,6 +45,10 @@ def validate_read_play_exit(menu_choice):
     return True
 
 def instructions():
+    """
+    Displays the game instructions
+    Asks if the user wants to play or exit
+    """
     print("-------------------------------------------")
     print("How to play:")
     print("To win the game: Collect 500 points!")
