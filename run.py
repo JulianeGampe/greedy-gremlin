@@ -11,7 +11,8 @@ def clear():
         """
         Clears the screen in Heroku
         """
-        os.system("cls" if os.name == "nt" else "clear")
+        if name == "nt":
+            _ = system("cls")
 
 def menu():
     """
