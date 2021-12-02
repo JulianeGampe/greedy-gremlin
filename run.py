@@ -329,6 +329,7 @@ def play_again():
 
     if another_game == "play":
         print("The Greedy Gremlin is waiting for your points. 😈")
+        time.sleep(3)
         start_game()
     else:
         exit()
