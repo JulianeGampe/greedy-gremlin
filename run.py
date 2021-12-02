@@ -311,6 +311,8 @@ def calculate_points(points, new_points):
         time.sleep(1.5)
         play_new_round(points)
     elif points >= 500:
+        print(f"You have {points} points.")
+        time.sleep(1)
         print("-------------------------------------------")
         time.sleep(1)
         print("YOU WON! Congratulation!")
