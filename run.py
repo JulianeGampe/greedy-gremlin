@@ -21,12 +21,12 @@ class Envelope:
         """
         Opens the envelope and reveals the content
         """
-        new_line = "\n"
+        sentence = ""
         if self.content == "Greedy Gremlin":
-            return f"The {self.color} envelope contains the {self.content}."
+            sentence = f"the {self.content}."
         else:
-            return f"The {self.color} envelope contains {self.content} points."
-
+            sentence = f"{self.content} points."
+        return f"The {self.color} envelope contains {sentence}"
 
     def skip(self):
         """
