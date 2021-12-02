@@ -7,6 +7,34 @@ from os import system, name
 
 points = 50
 
+class Envelope:
+    """
+    Creates the envelopes
+    Sets color, content
+    Has a method to open the envelope and to skip the envelope
+    """
+    def __init__(self, color, content):
+        self.color = color
+        self.content = content 
+        
+    def open(self):
+        """
+        Opens the envelope and reveals the content
+        """
+        new_line = "\n"
+        if self.content == "Greedy Gremlin":
+            return f"The {self.color} envelope contains the {self.content}."
+        else:
+            return f"The {self.color} envelope contains {self.content} points."
+
+
+    def skip(self):
+        """
+        Displays the message that the envelope will not be opened and 50 points are deducted
+        """
+        return "You have chosen to skip the round.\nYour envelope will not be opened.\n50 points will now be deducted from your score."
+        
+
 def clear():
         """
         Clears the screen in Heroku
@@ -234,33 +262,6 @@ def validate_open(choice):
     
     return True
 
-class Envelope:
-    """
-    Creates the envelopes
-    Sets color, content
-    Has a method to open the envelope and to skip the envelope
-    """
-    def __init__(self, color, content):
-        self.color = color
-        self.content = content 
-        
-    def open(self):
-        """
-        Opens the envelope and reveals the content
-        """
-        new_line = "\n"
-        if self.content == "Greedy Gremlin":
-            return f"The {self.color} envelope contains the {self.content}."
-        else:
-            return f"The {self.color} envelope contains {self.content} points."
-
-
-    def skip(self):
-        """
-        Displays the message that the envelope will not be opened and 50 points are deducted
-        """
-        return "You have chosen to skip the round.\nYour envelope will not be opened.\n50 points will now be deducted from your score."
-        
 
 def calculate_points(points, new_points):
     """
