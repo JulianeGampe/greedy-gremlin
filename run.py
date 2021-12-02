@@ -214,14 +214,8 @@ def start_new_round(points):
     content_three = envelope_content[0]
 
     chosen_envelope = Envelope(color_one, content_one)
-    print(chosen_envelope.color)
-    print(chosen_envelope.content)
     second_envelope = Envelope(color_two, content_two)
-    print(second_envelope.color)
-    print(second_envelope.content)
     third_envelope = Envelope(color_three, content_three)
-    print(third_envelope.color)
-    print(third_envelope.content)
 
     print(f"You have chosen the {chosen_envelope.color} envelope.")
     time.sleep(1)
