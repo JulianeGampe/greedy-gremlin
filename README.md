@@ -132,8 +132,11 @@ You must install the required Python packages for this application, using the co
 
 - Code Institute for the deployment terminal.
 - For inspiration of the game: "Geh aufs Ganze" on the [German Wikipedia Website](https://de.wikipedia.org/wiki/Geh_aufs_Ganze!) and the [English Wikipedia Website](https://en.wikipedia.org/wiki/Let%27s_Make_a_Deal) for the American equivalent "Let's Make a Deal".
-- Information about the prompt_toolkit from the [PyPI website](https://pypi.org/project/prompt-toolkit/).
+- Information about the prompt_toolkit from the [PyPI website](https://pypi.org/project/prompt-toolkit/) and from [prompt_toolkit](https://python-prompt-toolkit.readthedocs.io/en/stable/pages/asking_for_input.html).
 - Information about colorama from the [PyPI website](https://pypi.org/project/colorama/).
+- Code to clear the screen in Python from [GeeksForGeeks](https://www.geeksforgeeks.org/clear-screen-python/0).
+- "Greedy Gremlin" emoji from [Emojipedia](https://emojipedia.org/smiling-face-with-horns/).
+- Trophy emoji from [Emojipedia](https://emojipedia.org/trophy/).
 
 
 
