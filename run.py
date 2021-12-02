@@ -299,7 +299,7 @@ def play_new_round(points):
     new_round_completer = WordCompleter(["play", "exit"])
 
     while True:
-        new_round = prompt("Would you like to continue playing the next round or exit the game? play/exit: ", completer=new_round_completer).lower()
+        new_round = prompt("Would you like to continue playing the next round or exit the game completely? play/exit: ", completer=new_round_completer).lower()
 
         if validate_play_exit(new_round):
             break
