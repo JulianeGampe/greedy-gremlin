@@ -7,6 +7,12 @@ from os import system, name
 
 points = 50
 
+def clear():
+        """
+        Clears the screen in Heroku
+        """
+        os.system("cls" if os.name == "nt" else "clear")
+
 def menu():
     """
     Displays the welcome message and asks what the user would like to do
@@ -100,12 +106,7 @@ def start_game():
     """
     Starts a new game with an initial 50 points
     """
-    def clear():
-        """
-        Clears the screen in Heroku
-        """
-        os.system("cls" if os.name == "nt" else "clear")
-    
+    clear()   
 
     print("-------------------------------------------")
     print(f"You have {points} points.")
