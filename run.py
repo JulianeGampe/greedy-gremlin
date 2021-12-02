@@ -108,7 +108,7 @@ def instructions():
     time.sleep(1.5)
     print("One contains a negative number of points.")
     time.sleep(1.5)
-    print("One contains the Greedy Gremlin, who will take all your points for himself.")
+    print("One contains the Greedy Gremlin😈 who will take all your points for himself.")
     time.sleep(1.5)
     print("After choosing an envelope the content of one of the others will be revealed.")
     time.sleep(1.5)
@@ -221,6 +221,7 @@ def start_new_round(points):
             print("-------------------------------------------")
             time.sleep(1)
             print("GAME OVER")
+            print("   😈   ")
             time.sleep(1)
             print("-------------------------------------------")
             time.sleep(1)
@@ -280,13 +281,16 @@ def calculate_points(points, new_points):
         print("-------------------------------------------")
         time.sleep(1)
         print("YOU WON! Congratulation!")
+        print("       🏆     ")
         time.sleep(1)
         print("-------------------------------------------")
         time.sleep(1)
         play_again()
     else:
         print("-------------------------------------------")
-        print(f"Ahhh...you have {points} points. GAME OVER")
+        print(f"Ahhh...you have {points} points.")
+        print("GAME OVER")
+        print("   😈   ")
         print("-------------------------------------------")
         time.sleep(1)
         play_again()
@@ -324,7 +328,7 @@ def play_again():
             break
 
     if another_game == "play":
-        print("The Greedy Gremlin is waiting for your points.")
+        print("The Greedy Gremlin is waiting for your points. 😈")
         start_game()
     else:
         exit()
@@ -350,7 +354,7 @@ def exit():
     Exits the game completely
     Displays Goodbye message
     """
-    print("Thank you for playing! The Greedy Gremlin will try to get your points the next time!")
+    print("Thank you for playing! The Greedy Gremlin will try to get your points the next time! 😈")
 
 
 menu()
