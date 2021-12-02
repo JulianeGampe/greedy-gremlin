@@ -202,7 +202,7 @@ def start_new_round(points):
         color_two = f"{Fore.BLUE}blue{Fore.RESET}"
         color_three = f"{Fore.RED}red{Fore.RESET}"
 
-    positive_amount = random.randint(50, 100)
+    positive_amount = random.randint(250, 400)
     negative_amount = random.randint(-100, -20)
     greedy_gremlin = "Greedy Gremlin"
 
