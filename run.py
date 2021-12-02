@@ -3,6 +3,7 @@ from prompt_toolkit import prompt
 from prompt_toolkit.completion import WordCompleter
 from colorama import Fore
 import time
+from os import system, name
 
 points = 50
 
@@ -99,6 +100,13 @@ def start_game():
     """
     Starts a new game with an initial 50 points
     """
+    def clear():
+        """
+        Clears the screen in Heroku
+        """
+        os.system("cls" if os.name == "nt" else "clear")
+    
+
     print("-------------------------------------------")
     print(f"You have {points} points.")
     print("-------------------------------------------")
