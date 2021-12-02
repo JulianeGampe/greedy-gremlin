@@ -2,6 +2,7 @@ import random
 from prompt_toolkit import prompt 
 from prompt_toolkit.completion import WordCompleter
 from colorama import Fore
+import time
 
 points = 50
 
@@ -10,8 +11,11 @@ def menu():
     Displays the welcome message and asks what the user would like to do
     """
     print("Welcome to the Greedy Gremlin!")
+    time.sleep(1)
     print("What would you like to do?")
+    time.sleep(1)
     print("Read game instructions, start playing, exit the game")
+    time.sleep(1)
     
     menu_completer = WordCompleter(["read", "play", "exit"])
 
@@ -51,18 +55,31 @@ def instructions():
     """
     print("-------------------------------------------")
     print("How to play:")
+    time.sleep(1)
     print("To win the game: Collect 500 points!")
+    time.sleep(1.5)
     print("You will play several rounds to achieve that.")
+    time.sleep(1.5)
     print("You will start with an initial number of 50 points.")
+    time.sleep(1.5)
     print("You will be given a choice between three envelopes:")
+    time.sleep(1.5)
     print(f"{Fore.RED}red{Fore.RESET}, {Fore.GREEN}green{Fore.RESET}, {Fore.BLUE}blue{Fore.RESET}.")
+    time.sleep(1.5)
     print("One of them contains a positive number of points.")
+    time.sleep(1.5)
     print("One contains a negative number of points.")
+    time.sleep(1.5)
     print("One contains the Greedy Gremlin, who will take all your points for himself.")
+    time.sleep(1.5)
     print("After choosing an envelope the content of one of the others will be revealed.")
+    time.sleep(1.5)
     print("You can continue to open your envelope or skip the round\nat the cost of 50 points.")
+    time.sleep(1.5)
     print("The game is lost if you open the envelope with the Greedy Gremlin\nor if your score turns negative.")
+    time.sleep(1.5)
     print("-------------------------------------------")
+    time.sleep(1.5)
 
     instructions_completer = WordCompleter(["play", "exit"])
 
@@ -85,6 +102,7 @@ def start_game():
     print("-------------------------------------------")
     print(f"You have {points} points.")
     print("-------------------------------------------")
+    time.sleep(1)
     start_new_round(points)
 
 def start_new_round(points):
@@ -96,7 +114,9 @@ def start_new_round(points):
 
     while True:
         print("Which envelope would you like to open?")
+        time.sleep(1)
         print(f"{Fore.GREEN}green{Fore.RESET}/{Fore.RED}red{Fore.RESET}/{Fore.BLUE}blue{Fore.RESET}")
+        
         color_one = prompt("", completer=color_completer).lower()
 
         if validate_color(color_one):
@@ -138,8 +158,11 @@ def start_new_round(points):
     print(third_envelope.content)
 
     print(f"You have chosen the {chosen_envelope.color} envelope.")
+    time.sleep(1)
     print(second_envelope.open())
+    time.sleep(1)
     print(f"Would you still like to open the {chosen_envelope.color} envelope?")
+    time.sleep(1)
 
     open_skip_completer = WordCompleter(["open", "skip"])
 
@@ -151,15 +174,20 @@ def start_new_round(points):
 
     if choice == "open":
         print(chosen_envelope.open())
+        time.sleep(1.5)
         if chosen_envelope.content != "Greedy Gremlin":
             calculate_points(points, chosen_envelope.content)
         else:
             print("-------------------------------------------")
+            time.sleep(1)
             print("GAME OVER")
+            time.sleep(1)
             print("-------------------------------------------")
+            time.sleep(1)
             play_again() 
     else:
         print(chosen_envelope.skip())
+        time.sleep(1)
         calculate_points(points, -50)
         
 
@@ -233,16 +261,21 @@ def calculate_points(points, new_points):
         print("-------------------------------------------")
         print(f"You have {points} points. You need at least 500 points to win.")
         print("-------------------------------------------")
+        time.sleep(1.5)
         play_new_round(points)
     elif points >= 500:
         print("-------------------------------------------")
+        time.sleep(1)
         print("YOU WON! Congratulation!")
+        time.sleep(1)
         print("-------------------------------------------")
+        time.sleep(1)
         play_again()
     else:
         print("-------------------------------------------")
         print(f"Ahhh...you have {points} points. GAME OVER")
         print("-------------------------------------------")
+        time.sleep(1)
         play_again()
 
 def play_new_round(points):
