@@ -109,6 +109,48 @@ A wireframe created with Microsoft Word was used to plan the structure of the ga
 
 ## Data Model
 
+I decided to use an Envelope class as a model. The game creates three instances of the Envelope class to hold the three envelopes, that the player can choose from.
+
+```python
+    chosen_envelope = Envelope(color_one, content_one)
+    second_envelope = Envelope(color_two, content_two)
+    third_envelope = Envelope(color_three, content_three)
+```
+
+The Envelope class stores the color and the content of the envelopes. It has two methods to help play the game. The open method will open the envelope and return the content of the envelope. The skip method will skip the envelope and return a message, that the envelope will not be opened and 50 points will be deducted. 
+
+```python
+class Envelope:
+    """
+    Creates the envelopes
+    Sets color, content
+    Has a method to open the envelope and to skip the envelope
+    """
+    def __init__(self, color, content):
+        self.color = color
+        self.content = content
+
+    def open(self):
+        """
+        Opens the envelope and reveals the content
+        """
+        sentence = ""
+        if self.content == "Greedy Gremlin":
+            sentence = f"the {self.content}."
+        else:
+            sentence = f"{self.content} points."
+        return f"The {self.color} envelope contains {sentence}"
+
+    def skip(self):
+        """
+        Displays the message that the envelope will not be opened
+        Displays that 50 points are deducted
+        """
+        return ("You have chosen to skip the round.\n"
+                "Your envelope will not be opened.\n"
+                "50 points will now be deducted from your score.")
+
+```
 ## Technologies Used
 
 - [Python](https://www.python.org/) was used as programming language to develop the game.
