@@ -158,6 +158,10 @@ class Envelope:
 - [The Colorama module](https://pypi.org/project/colorama/) was used to change the foreground color for the three envelopes and thereby provide the user with visual cues. 
 - [Gitpod](https://www.gitpod.io/) was used for the developement of the game.
 - [GitHub](https://github.com/) was used to store the code online.
+- [The GitHub Projects Board](https://github.com/JulianeGampe/greedy-gremlin/projects/1) was used to keep track of tasks that are still to do or in progress or see tasks that are already done. Although the board was not entirely complete it provided a useful overview.
+  ![Projects Board](documentation/screenshots/projectboard.png)
+- [The GitHub Issues tracker](https://github.com/JulianeGampe/greedy-gremlin/issues) was used to keep track of bugs and add solutions.
+  ![Issues Tracker](documentation/screenshots/issuestracker.png)
 - Git was used for version control.
 
 ## Testing 
