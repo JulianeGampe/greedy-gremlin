@@ -80,6 +80,15 @@ A wireframe created with Microsoft Word was used to plan the structure of the ga
 
 ## Data Model
 
+## Technologies Used
+
+- [Python](https://www.python.org/) was used as programming language to develop the game.
+- [The Prompt Toolkit library](https://pypi.org/project/prompt-toolkit/) was used to ask for inputs with prompts and offer autocompletion.
+- [The Colorama module](https://pypi.org/project/colorama/) was used to change the foreground color for the three envelopes and thereby provide the user with visual cues. 
+- [Gitpod](https://www.gitpod.io/) was used for the developement of the game.
+- [GitHub](https://github.com/) was used to store the code online.
+- Git was used for version control.
+
 ## Testing 
 
 Due to the lengths of testing, you can see all tests in the [TESTING.md](TESTING.md) file.  
