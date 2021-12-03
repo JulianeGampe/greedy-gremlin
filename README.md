@@ -225,3 +225,4 @@ You must install the required Python packages for this application, using the co
 - Code to clear the screen in Python from [GeeksForGeeks](https://www.geeksforgeeks.org/clear-screen-python/0).
 - "Greedy Gremlin" emoji from [Emojipedia](https://emojipedia.org/smiling-face-with-horns/).
 - Trophy emoji from [Emojipedia](https://emojipedia.org/trophy/).
+- [Am I responsive](http://ami.responsivedesign.is/) has been used to create the responsive mockup of the project.
