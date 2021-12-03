@@ -38,6 +38,19 @@ I have manually tested this project by doing the following:
     - After a game over or win:
     ![Play new game or exit](documentation/screenshots/playexit.png)
 
-### Unfixed Bugs
+### Fixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+The following bugs were tracked and fixed using the GitHub Issues tracker.
+
+- **calculate points: >=500 points - play_new_round called anyway** - [#1](https://github.com/JulianeGampe/greedy-gremlin/issues/1)
+- **UnboundLocalError: local variable 'color_two' referenced before assignment** - [#2](https://github.com/JulianeGampe/greedy-gremlin/issues/2)
+- **Game Over message displayed incorrectly** - [#3](https://github.com/JulianeGampe/greedy-gremlin/issues/3)
+
+
+### Remaining Bugs
+
+- No bugs remaining.
+
+---
+
+Return to the [README](README.md) file
