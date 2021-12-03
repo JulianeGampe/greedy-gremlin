@@ -124,6 +124,10 @@ The live link can be found here -  https://greedy-gremlin.herokuapp.com/
 If you would like to make a local copy of this repository, you can clone it by typing the following command in your IDE terminal:
 - `git clone https://github.com/JulianeGampe/greedy-gremlin.git` 
 
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JulianeGampe/greedy-gremlin)
+
 You must install the required Python packages for this application, using the command:
 - `pip3 install -r requirements.txt`
 
