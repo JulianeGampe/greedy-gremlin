@@ -10,10 +10,9 @@ I have manually tested this project by doing the following:
 
 ### Validator Testing 
 
-- HTML
-  - No errors were returned when passing through the official [W3C validator]()
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator]()
+- PEP8
+  - No errors were returned from [PEP8online.com](http://pep8online.com/checkresult).
+    ![PEP8 validation](documentation/screenshots/pep8validation.png)
 
 ### Testing User Stories
 
