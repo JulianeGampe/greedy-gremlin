@@ -1,9 +1,10 @@
 import random
+import time
+from os import system, name
 from prompt_toolkit import prompt
 from prompt_toolkit.completion import WordCompleter
 from colorama import Fore
-import time
-from os import system, name
+
 
 points = 50
 
@@ -40,13 +41,13 @@ class Envelope:
 
 
 def clear():
-        """
-        Clears the screen in Heroku
-        """
-        if name == "nt":
-            _ = system("cls")
-        else:
-            _ = system("clear")
+    """
+    Clears the screen in Heroku
+    """
+    if name == "nt":
+        _ = system("cls")
+    else:
+        _ = system("clear")
 
 
 def menu():
@@ -89,7 +90,6 @@ def validate_read_play_exit(menu_choice):
             menu_choice != "exit"
         ):
             raise ValueError
-
     except:
         print("Please enter 'read', 'play' or 'exit'")
         return False
@@ -265,7 +265,6 @@ def validate_color(color):
     try:
         if color != "red" and color != "blue" and color != "green":
             raise ValueError
-
     except:
         print("Please enter 'red', 'blue' or 'green'.")
         return False
@@ -281,7 +280,6 @@ def validate_open(choice):
     try:
         if choice != "open" and choice != "skip":
             raise ValueError
-
     except:
         print("Please enter 'open' or 'skip'")
         return False
@@ -381,7 +379,6 @@ def validate_play_exit(entry):
     try:
         if entry != "play" and entry != "exit":
             raise ValueError
-
     except:
         print("Please enter 'play' or 'exit'")
         return False
