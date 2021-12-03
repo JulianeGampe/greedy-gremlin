@@ -41,37 +41,66 @@ A wireframe created with Microsoft Word was used to plan the structure of the ga
 
   - A positive amount of points, a negative a amount of points and the Gremlin are randomly assigned to the three envelopes (red, green and blue).
 
-![Envelopes]()
+    ```python
+        positive_amount = random.randint(250, 400)
+        negative_amount = random.randint(-100, -20)
+        greedy_gremlin = "Greedy Gremlin"
+
+        envelope_content = [positive_amount, negative_amount, greedy_gremlin]
+        content_one = random.choice(envelope_content)
+        envelope_content.remove(content_one)
+        content_two = random.choice(envelope_content)
+        envelope_content.remove(content_two)
+        content_three = envelope_content[0]
+    ```
+- __Game Instructions__
+
+  - The user can choose to read the instructions of the game at the start.
+
+    ![Instructions](documentation/screenshots/instructions.png)
 
 - __Choosing an envelope and revelation of content of one of the other envelopes__
 
   - The player can choose one envelope and will be shown the content of one of the other envelopes.
 
-![Choosing an envelope]()
+    ![Choosing an envelope](documentation/screenshots/envelopechoice.png)
+    ![Revelation of content](documentation/screenshots/revealsecondenvelope.png)
 
 - __Open or Skip__
 
   - The player can decide if they want to continue with opening their envelope or skip the round.
 
-![Continue or skip]()
+    ![Continue or skip](documentation/screenshots/skip.png)
 
 - __Result__
 
   - The result of the round is shown to the player.
-
-![Result]()
+    -  Result: total amount of points remains positive:
+    ![Result positive amount](documentation/screenshots/resultpositive.png)
+    - Result: total amount of points is negative:
+    ![Result negative amount](documentation/screenshots/resultnegative.png)
+    - Result: the envelope with the Greedy Gremlin was opened:
+    ![Result game over](documentation/screenshots/resultgameover.png)
+    - Result: 500 or more points, game won:
+    ![Result win](documentation/screenshots/resultwin.png)
 
 - __Continue or exit__ 
 
   - The player can decide if they want to continue playing or exit the game.
+    - When the player has a positive amount of points left, but not won yet:
+    ![Play new round or exit](documentation/screenshots/nextroundexit.png)
+    - After a game over or win:
+    ![Play new game or exit](documentation/screenshots/playexit.png)
 
-![Continue or exit]()
 
 - __Input Validation and Error checking__
 
   - Player can only enter the suggested commands.
-  - Possible command choices will be shown in the terminal.
-  - An error message will display if the input is invalid.
+    - Possible command choices will be shown in the terminal.
+    ![Command choice example](documentation/screenshots/nextroundexit.png)
+    ![Command choice example](documentation/screenshots/envelopechoice.png)
+    - An error message will display if the input is invalid.
+    ![Invalid input](documentation/screenshots/incorrectinput.png)
 
 ### Future Features
 
