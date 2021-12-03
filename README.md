@@ -4,7 +4,7 @@ Greedy Gremlin is a Python terminal game, which runs in the Code Institute mock 
 
 The aim of the game is to collect 500 points. Users can choose to open one of three envelopes. One envelope will add points to the users score, one will subtract points and one envelope contains the Greedy Gremlin. Picking the envelope with the Gremlin will result in a Game Over as the Gremlin takes all the points for himself.
 
-![Responsive Mockup]()
+![Responsive Mockup](documentation/screenshots/amiresponsive.png)
 
 ## How to Play
 
