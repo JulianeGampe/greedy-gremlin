@@ -87,7 +87,7 @@ def validate_read_play_exit(menu_choice):
             menu_choice != "exit"
         ):
             raise ValueError
-    except:
+    except ValueError:
         print("Please enter 'read', 'play' or 'exit'")
         return False
 
@@ -267,7 +267,7 @@ def validate_color(color):
     try:
         if color != "red" and color != "blue" and color != "green":
             raise ValueError
-    except:
+    except ValueError:
         print("Please enter 'red', 'blue' or 'green'.")
         return False
 
@@ -282,7 +282,7 @@ def validate_open(choice):
     try:
         if choice != "open" and choice != "skip":
             raise ValueError
-    except:
+    except ValueError:
         print("Please enter 'open' or 'skip'")
         return False
 
@@ -381,7 +381,7 @@ def validate_play_exit(entry):
     try:
         if entry != "play" and entry != "exit":
             raise ValueError
-    except:
+    except ValueError:
         print("Please enter 'play' or 'exit'")
         return False
 
