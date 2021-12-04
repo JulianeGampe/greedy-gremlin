@@ -73,7 +73,7 @@ def menu():
     elif menu_choice == "play":
         start_game()
     elif menu_choice == "exit":
-        exit()
+        exit_game()
 
 
 def validate_read_play_exit(menu_choice):
@@ -151,7 +151,7 @@ def instructions():
     if instructions_choice == "play":
         start_game()
     elif instructions_choice == "exit":
-        exit()
+        exit_game()
 
 
 def start_game():
@@ -345,7 +345,7 @@ def play_new_round(points):
     if new_round == "play":
         start_new_round(points)
     else:
-        exit()
+        exit_game()
 
 
 def play_again():
@@ -370,7 +370,7 @@ def play_again():
         time.sleep(3)
         start_game()
     else:
-        exit()
+        exit_game()
 
 
 def validate_play_exit(entry):
@@ -388,7 +388,7 @@ def validate_play_exit(entry):
     return True
 
 
-def exit():
+def exit_game():
     """
     Exits the game completely
     Displays Goodbye message
