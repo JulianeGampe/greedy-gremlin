@@ -237,6 +237,9 @@ def start_new_round(points):
             break
 
     if choice == "open":
+        print(third_envelope.open())
+        time.sleep(1)
+        print("-------------------------------------------")
         print(chosen_envelope.open())
         time.sleep(1.5)
         if chosen_envelope.content != "Greedy Gremlin":
