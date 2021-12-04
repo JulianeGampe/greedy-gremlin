@@ -6,9 +6,6 @@ from prompt_toolkit.completion import WordCompleter
 from colorama import Fore
 
 
-points = 50
-
-
 class Envelope:
     """
     Creates the envelopes
@@ -163,11 +160,13 @@ def start_game():
     """
     clear()
 
+    start_points = 50
+
     print("-------------------------------------------")
-    print(f"You have {points} points.")
+    print(f"You have {start_points} points.")
     print("-------------------------------------------")
     time.sleep(1)
-    start_new_round(points)
+    start_new_round(start_points)
 
 
 def start_new_round(points):
