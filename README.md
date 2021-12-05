@@ -28,10 +28,11 @@ The game will be lost if the score of the player turns negative or if the envelo
 
 ## Wireframes
 
-A wireframe created with Microsoft Word was used to plan the structure of the game.
+A wireframe and flowchart created with Microsoft Word and Paint were used to plan the structure of the game.
 
 ![Wireframe page one](documentation/wireframes/wireframe_pageone.png)
 ![Wireframe page two](documentation/wireframes/wireframe_pagetwo.png)
+![Flowchart](documentation/wireframes/flowchart.png)
 
 ## Features 
 
@@ -163,6 +164,7 @@ class Envelope:
 - [The GitHub Issues tracker](https://github.com/JulianeGampe/greedy-gremlin/issues) was used to keep track of bugs and add solutions.
   ![Issues Tracker](documentation/screenshots/issuestracker.png)
 - Git was used for version control.
+- Microsoft Word and Paint were used to create the wireframe and flowchart.
 
 ## Testing 
 
@@ -202,7 +204,6 @@ This project was deployed using Code Institute's mock terminal for Heroku.
 
 The live link can be found here -  https://greedy-gremlin.herokuapp.com/ 
 
-
 ### Local Deployment
 
 If you would like to make a local copy of this repository, you can clone it by typing the following command in your IDE terminal:
@@ -214,7 +215,6 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 You must install the required Python packages for this application, using the command:
 - `pip3 install -r requirements.txt`
-
 
 ## Credits 
 
