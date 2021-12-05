@@ -11,7 +11,7 @@ I have manually tested this project by doing the following:
 ### Validator Testing 
 
 - PEP8
-  - No errors were returned from [PEP8online.com](http://pep8online.com/checkresult).
+  - No errors were returned from [PEP8online.com](http://pep8online.com/).
     ![PEP8 validation](documentation/screenshots/pep8validation.png)
 
 ### Testing User Stories
@@ -35,7 +35,7 @@ I have manually tested this project by doing the following:
 - As a user I want to be able to decide if I want to continue playing or not.
     - When a positive amount of points is left, but not won yet:
     ![Play new round or exit](documentation/screenshots/nextroundexit.png)
-    - After a game over or win:
+    - After a game over or win: 
     ![Play new game or exit](documentation/screenshots/playexit.png)
 
 ### Fixed Bugs
