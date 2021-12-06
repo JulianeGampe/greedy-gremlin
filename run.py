@@ -302,12 +302,15 @@ def calculate_points(points, new_points):
     Displays the result of the round
     """
     points = points + new_points
+    missing_points = 500 - points
 
     if points >= 0 and points < 500:
         print("-------------------------------------------")
         print(f"You have {points} points.")
         time.sleep(1)
-        print("You need at least 500 points to win.")
+        print("-------------------------------------------")
+        print(f"You still need {missing_points} points")
+        print("to reach the goal of 500 points.")
         print("-------------------------------------------")
         time.sleep(1.5)
         play_new_round(points)
