@@ -51,6 +51,7 @@ def menu():
     """
     Displays the welcome message and asks what the user would like to do
     """
+    clear()
     print("Welcome to the Greedy Gremlin!")
     time.sleep(1)
     print("What would you like to do?")
@@ -99,6 +100,7 @@ def instructions():
     Displays the game instructions
     Asks if the user wants to play or exit
     """
+    clear()
     print("-------------------------------------------")
     print("How to play:")
     time.sleep(1)
@@ -216,6 +218,7 @@ def start_new_round(points):
     second_envelope = Envelope(color_two, content_two)
     third_envelope = Envelope(color_three, content_three)
 
+    clear()
     print(f"You have chosen the {chosen_envelope.color} envelope.")
     time.sleep(1)
     print(second_envelope.open())
@@ -366,6 +369,7 @@ def play_again():
             break
 
     if another_game == "play":
+        clear()
         print("The Greedy Gremlin is waiting for your points. 😈")
         time.sleep(3)
         start_game()
