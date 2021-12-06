@@ -102,7 +102,7 @@ def instructions():
     """
     clear()
     print("-------------------------------------------")
-    print("How to play:")
+    print("How to play Greedy Gremlin:")
     time.sleep(1)
     print("To win the game: Collect 500 points!")
     time.sleep(1.5)
@@ -120,7 +120,7 @@ def instructions():
     time.sleep(1.5)
     print("One contains a negative number of points.")
     time.sleep(1.5)
-    print("One contains the Greedy Gremlin😈")
+    print("One contains the Greedy Gremlin 😈")
     time.sleep(1.5)
     print("who will take all your points for himself.")
     time.sleep(1.5)
