@@ -155,8 +155,6 @@ class Envelope:
 ## Technologies Used
 
 - [Python](https://www.python.org/) was used as programming language to develop the game.
-- [The Prompt Toolkit library](https://pypi.org/project/prompt-toolkit/) was used to ask for inputs with prompts and offer autocompletion.
-- [The Colorama module](https://pypi.org/project/colorama/) was used to change the foreground color for the three envelopes and thereby provide the user with visual cues. 
 - [Gitpod](https://www.gitpod.io/) was used for the developement of the game.
 - [GitHub](https://github.com/) was used to store the code online.
 - [The GitHub Projects Board](https://github.com/JulianeGampe/greedy-gremlin/projects/1) was used to keep track of tasks that are still to do or in progress or see tasks that are already done. Although the board was not entirely complete it provided a useful overview.
@@ -165,6 +163,11 @@ class Envelope:
   ![Issues Tracker](documentation/screenshots/issuestracker.png)
 - Git was used for version control.
 - Microsoft Word and Paint were used to create the wireframe and flowchart.
+
+### Python Packages
+- [prompt-toolkit](https://pypi.org/project/prompt-toolkit/) - was used for prefilling the user selections
+- [wcwidth](https://pypi.org/project/wcwidth/) - comes as part of the prompt-toolkit package
+- [colorama](https://pypi.org/project/colorama/) - was used for adding color to the terminal
 
 ## Testing 
 
