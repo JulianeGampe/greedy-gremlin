@@ -35,11 +35,13 @@ I have manually tested this project by doing the following:
     ![Play new round or exit](documentation/screenshots/nextroundexit.png)
     - After a game over or win: 
 
-    ![Play new game or exit](documentation/screenshots/playexit.png)
+      ![Play new game or exit](documentation/screenshots/playexit.png)
 
 ### Fixed Bugs
 
 The following bugs were tracked and fixed using the GitHub Issues tracker.
+
+![GitHub Issues Tracker](documentation/screenshots/issuestracker.png)
 
 - **calculate points: >=500 points - play_new_round called anyway** - [#1](https://github.com/JulianeGampe/greedy-gremlin/issues/1)
 - **UnboundLocalError: local variable 'color_two' referenced before assignment** - [#2](https://github.com/JulianeGampe/greedy-gremlin/issues/2)
@@ -48,7 +50,7 @@ The following bugs were tracked and fixed using the GitHub Issues tracker.
 
 ### Remaining Bugs
 
-- No bugs remaining.
+- No remaining bugs that I am aware of.
 
 ---
 
