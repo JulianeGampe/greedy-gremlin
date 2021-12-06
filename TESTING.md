@@ -2,8 +2,6 @@
 
 I have manually tested this project by doing the following:
 
-- Passed the code through a PEP8 validation and confirmed there are no problems.
-  ![PEP8 validation](documentation/screenshots/pep8validation.png)
 - Confirmed that it is not possible to give invalid input.
   ![Invalid input](documentation/screenshots/incorrectinput.png)
 - Tested in my local terminal and the Code Institute Heroku terminal
@@ -36,6 +34,7 @@ I have manually tested this project by doing the following:
     - When a positive amount of points is left, but not won yet:
     ![Play new round or exit](documentation/screenshots/nextroundexit.png)
     - After a game over or win: 
+
     ![Play new game or exit](documentation/screenshots/playexit.png)
 
 ### Fixed Bugs
