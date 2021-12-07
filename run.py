@@ -406,6 +406,7 @@ def exit_game():
     Exits the game completely
     Displays Goodbye message
     """
+    clear()
     print("Thank you for playing!")
     print("The Greedy Gremlin will try to get your points the next time! 😈")
 
