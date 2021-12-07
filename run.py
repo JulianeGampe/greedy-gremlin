@@ -353,6 +353,7 @@ def play_new_round(points):
             break
 
     if new_round == "play":
+        print("-------------------------------------------")
         start_new_round(points)
     else:
         exit_game()
