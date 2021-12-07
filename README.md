@@ -40,7 +40,7 @@ A wireframe and flowchart created with Microsoft Word and Paint were used to pla
 
 - __Random assignment of a positive amount, negative amount and the Gremlin to the three envelopes__
 
-  - A positive amount of points, a negative a amount of points and the Gremlin are randomly assigned to the three envelopes (red, green and blue).
+  - A positive amount of points, a negative amount of points and the Gremlin are randomly assigned to the three envelopes (red, green and blue).
 
     ```python
         positive_amount = random.randint(250, 400)
@@ -96,7 +96,7 @@ A wireframe and flowchart created with Microsoft Word and Paint were used to pla
 
 - __Input Validation and Error checking__
 
-  - Player can only enter the suggested commands.
+  - The player can only enter the suggested commands.
     - Possible command choices will be shown in the terminal.
     ![Command choice example](documentation/screenshots/nextroundexit.png)
     ![Command choice example](documentation/screenshots/envelopechoice.png)
