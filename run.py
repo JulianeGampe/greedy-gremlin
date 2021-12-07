@@ -240,6 +240,7 @@ def start_new_round(points):
             break
 
     if choice == "open":
+        print("-------------------------------------------")
         print(f"The envelope you did not choose is {third_envelope.color}.")
         time.sleep(1.5)
         print(third_envelope.open())
