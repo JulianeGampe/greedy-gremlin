@@ -40,6 +40,7 @@ class Envelope:
 def clear():
     """
     Clears the screen in Heroku
+    Code taken from: https://www.geeksforgeeks.org/clear-screen-python/0
     """
     if name == "nt":
         _ = system("cls")
